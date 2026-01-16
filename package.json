@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "setup": "node bot.js --setup",
+    "setup": "node bot.js--setup",
     "dev": "node bot.js"
   },
   "dependencies": {
