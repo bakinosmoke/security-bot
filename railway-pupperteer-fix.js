@@ -1,6 +1,4 @@
 // Railway Puppeteer Configuration Fix
-// Add this to the beginning of your bot.js OR run as separate file
-
 const fs = require('fs');
 const path = require('path');
 
@@ -14,8 +12,11 @@ const isRailway = process.env.RAILWAY_ENVIRONMENT ||
 if (isRailway) {
     console.log('🔧 Configuring for Railway deployment');
     
-    // Set puppeteer environment variables
-    process.env.PUPPETEER_EXECUTABLE_PATH = '/usr/bin/google-chrome-stable';
+    // Set puppeteer environment variables for Railway
+    process.env.PUPPETEER_EXECUTABLE_PATH = '/usr/bin/chromium';
+    process.env.CHROMIUM_PATH = '/usr/bin/chromium';
+    process.env.PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = 'true';
+    process.env.PUPPETEER_PRODUCT = 'chrome';
     
     // Create required directories for bot
     const requiredDirs = [
