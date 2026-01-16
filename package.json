@@ -2,11 +2,11 @@
   "name": "security-bot",
   "version": "1.0.0",
   "description": "AI Security Bot",
-  "main": "bot_v10.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node bot_v10.js",
-    "setup": "node bot_v10.js --setup",
-    "dev": "node bot_v10.js"
+    "start": "node bot.js",
+    "setup": "node bot.js --setup",
+    "dev": "node bot.js"
   },
   "dependencies": {
     "telegraf": "^4.12.2",
