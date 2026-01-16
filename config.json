@@ -1,0 +1,23 @@
+{
+  "TELEGRAM_TOKEN": "",
+  "ADMIN_IDS": [5292158649],
+  "CURRENT_MODE": "educational",
+  "FEATURES": {
+    "SECURITY_SCAN": true,
+    "AI_CLOUDFLARE_BYPASS": true,
+    "LOAD_TESTING": true,
+    "WEBSITE_SCRAPING": true
+  },
+  "SAFETY": {
+    "MAX_LOAD_TEST_DURATION": 300,
+    "RATE_LIMIT_PER_USER": 100,
+    "LEGAL_COMPLIANCE_CHECK": true,
+    "DOMAIN_BLACKLIST": [
+      ".gov",
+      ".mil",
+      ".edu",
+      "banking",
+      "financial"
+    ]
+  }
+}
